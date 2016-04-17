@@ -13,6 +13,10 @@ public class SkillExec : MonoBehaviour {
 	[HideInInspector] protected 	float		 	_execTime;
 	[HideInInspector] protected		SkillAnimation	_skillAnnimation;
 
+	[SerializeField] public 		Character		 impacted;
+	[SerializeField] protected 		float		 	_life;
+	[SerializeField] protected 		float		 	_force;
+
 	// Use this for initialization
 	void Start () {
 		this._skillAnnimation = GetComponent<SkillAnimation>();
@@ -31,5 +35,29 @@ public class SkillExec : MonoBehaviour {
 			return ;
 		this.animate();
 		this._execTime = Time.fixedTime + this._reloadTime;
+
+		if ( this.impacted == null )
+			return ;
+		this.impacted.force += this._force;
+		this.impacted.ModifyHealth( this._life );
+	}
+
+	public GameObject getImpacted() {
+		if ( this._skillAnnimation._positionOn == initPositionOn.mouse ) {
+			RaycastHit hit;
+			Ray rayPos; rayPos = Camera.main.ScreenPointToRay (Input.mousePosition);
+			if (Physics.Raycast (rayPos, out hit, 100)) {
+				return hit.collider.gameObject;
+			}
+			return null;
+		}
+		return GameManager.gm.player.gameObject;
+	}
+
+	public void setImpacted( GameObject obj ) {
+		Character chara = (Character)obj.GetComponent<Character>();
+		if ( chara == null )
+			return ;
+		this.impacted = chara;
 	}
 }

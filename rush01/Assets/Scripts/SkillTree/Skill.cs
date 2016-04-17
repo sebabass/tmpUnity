@@ -30,6 +30,7 @@ public class Skill : SkillInformations {
 
 
 	public void						use() {
+		this._skillScript.setImpacted( this._skillScript.getImpacted() );
 		this._skillScript.exec();
 	}
 
@@ -69,7 +70,7 @@ public class Skill : SkillInformations {
 	}
 
 	private				bool		UserCanBought() {
-		int		userPoint = 100; // Get User Tallent point
+		int		userPoint = GameManager.gm.skillPoints;
 
 		if ( userPoint >= this.GetNextPrice() && this._usersSkills.getUserStep() >= this._minimumStep )
 			return true;
