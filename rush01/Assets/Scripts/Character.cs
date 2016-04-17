@@ -29,6 +29,13 @@ public class Character : MonoBehaviour {
 
 	[HideInInspector]public GameObject		currentTarget;
 
+	public float GetMaxHealth () {
+		return (_maxHealth);
+	}
+
+	public float GetMaxMana () {
+		return (_maxMana);
+	}
 	// Use this for initialization
 	protected virtual void Awake () {
 		this.health = this.constitution * 5;

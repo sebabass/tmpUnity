@@ -32,35 +32,35 @@ public class myStats : MonoBehaviour {
 		if ((playerInterface._pointComp > 0 && i <= 3) || (playerInterface._pointComp < 5 && i >= 4) ) {
 			switch (i) {
 				case 0 :
-					playerInterface._agi++;
+					GameManager.gm.player.agility++;
 					playerInterface._pointComp--;
 					break;
 				case 1 :
-					playerInterface._strength++;
+					GameManager.gm.player.force++;
 					playerInterface._pointComp--;
 					break;
 				case 2 :
-					playerInterface._armo++;
+					GameManager.gm.player.armor++;
 					playerInterface._pointComp--;
 					break;
 				case 3 :
-					playerInterface._con++;
+					GameManager.gm.player.constitution++;
 					playerInterface._pointComp--;
 					break;
 				case 4 :
-					playerInterface._agi--;
+					GameManager.gm.player.agility--;
 					playerInterface._pointComp++;
 					break;
 				case 5 :
-					playerInterface._strength--;
+					GameManager.gm.player.force--;
 					playerInterface._pointComp++;
 					break;
 				case 6 :
-					playerInterface._armo--;
+					GameManager.gm.player.armor--;
 					playerInterface._pointComp++;
 					break;
 				case 7 :
-					playerInterface._con--;
+					GameManager.gm.player.constitution--;
 					playerInterface._pointComp++;
 					break;
 			}
