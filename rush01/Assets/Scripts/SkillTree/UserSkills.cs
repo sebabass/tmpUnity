@@ -172,7 +172,7 @@ public class UserSkills : MonoBehaviour {
 	
 	public int			getUserStep() {
 		//		int		userLevel = GameManager.gm.level; // Get User Level ? Right ?
-		int		userLevel = 30;
+		int		userLevel = GameManager.gm.level;
 		return Mathf.FloorToInt( userLevel / UserSkills.levelPerStep );
 	}
 

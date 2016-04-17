@@ -2,14 +2,14 @@
 using System.Collections;
 
 public enum initPositionOn {
-	player,positionBellow,gameobjectPositionBellow,camera
+	player,positionBellow,gameobjectPositionBellow,camera,mouse
 }
 
 public class SkillAnimation : MonoBehaviour {
 
 	[SerializeField] protected		float				_duration = 5f;
 	[SerializeField] protected		GameObject			_annimationParticule;
-	[SerializeField] protected 		initPositionOn	 	_positionOn;
+	[SerializeField] public 		initPositionOn	 	_positionOn;
 	[SerializeField] protected 		Vector3			 	_position;
 	[SerializeField] protected 		GameObject			_positionGameObject;
 
@@ -49,6 +49,14 @@ public class SkillAnimation : MonoBehaviour {
 				return this._positionGameObject.transform.position;
 		else if ( this._positionOn == initPositionOn.camera )
 				return Camera.main.transform.position;
+		else if ( this._positionOn == initPositionOn.mouse ) {
+			RaycastHit hit;
+			Ray rayPos; rayPos = Camera.main.ScreenPointToRay (Input.mousePosition);
+			if (Physics.Raycast (rayPos, out hit, 100)) {
+				return hit.point;
+			}
+			return Vector3.zero;
+		}
 		return Vector3.zero;
 	}
 }
