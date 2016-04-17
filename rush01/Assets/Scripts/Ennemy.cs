@@ -4,98 +4,68 @@ using System.Collections;
 public class Ennemy : Character {
 
 	protected float radiusPursuit = 10.0f;
-	protected Animator _anim;
 	protected float	expGain;
-
 	protected Transform positionPlayer;
-	private bool animAttack = false;
-
 
 	protected override void Awake () {
 		base.Awake ();
 		_anim = GetComponent<Animator> ();
 	}
 
-	void Start () {
-		expGain = 10f;
+	protected override void Start () {
+		base.Start ();
+		expGain = 100f;
 	}
 	
-	void Update () {
-		//Debug.Log (_anim.GetCurrentAnimatorClipInfo(0));
-		if (health <= 0 && !dead)
+	protected void Update () {
+		if (this.health <= 0 && !this._dead)
 			Die ();
-		if (dead)
+		if (this._dead)
 			transform.Translate (Vector3.down * Time.deltaTime);
 		else {
-			OnEnemy();
+			this.OnEnemy();
 		}
 	}
 
 	void Detection() {
-		Collider[] hitColliders1 = Physics.OverlapSphere (transform.position, radiusPursuit);
+		Collider[] hitColliders1 = Physics.OverlapSphere (this.transform.position, this.radiusPursuit);
 		for (int i = 0; i < hitColliders1.Length; i++) {
-			if (hitColliders1[i].CompareTag("player")) {
-				currentTarget = hitColliders1 [i].gameObject;
-				if (Vector3.Distance(hitColliders1[i].transform.position, this.transform.position) > 2.5f) {
-					Run();
-				}
+			if (hitColliders1[i].CompareTag("Player")) {
+				this.currentTarget = hitColliders1 [i].gameObject;
+				if (!this.TargetIsCloseToMe())
+					this.Run();
 			}
 		}
 	}
 
 	void OnEnemy() {
 		this.Detection ();
-		if (navMesh && navMesh.remainingDistance <= navMesh.stoppingDistance) {
-			if (!navMesh.hasPath || Mathf.Abs (navMesh.velocity.sqrMagnitude) < float.Epsilon)
-			{
-				_anim.SetBool ("isRunning", false);
-				Attack();
-			}
+		if (this.currentTarget && this.TargetIsCloseToMe()) {
+			this._anim.SetBool ("isRunning", false);
+			this.Attack();
 		}
 	}
 
 	protected override void Die() {
-		dead = true;
-		_anim.SetBool ("isAttack", false);
-		_anim.SetBool ("isDeath", true);
+		base.Die ();
 		StartCoroutine (ClearZombie ());
-	}
-
-	void Attack () {
-		transform.LookAt(currentTarget.transform.position);
-		_anim.SetTrigger("isAttack");
 	}
 
 	void  Run () {
 		this._anim.ResetTrigger ("isAttack");
-		this.navMesh.destination = this.currentTarget.transform.position;
-		this.navMesh.Resume();
-		//if (this.navMesh.hasPath) {
+		this._agent.destination = this.currentTarget.transform.position;
+		this._agent.Resume();
+		if (this._agent.hasPath) {
 			this._anim.SetBool ("isRunning", true);
-		//}
-		/*
-		if (navMesh) {
-			transform.LookAt(currentTarget.transform.position);
-			navMesh.destination = currentTarget.transform.position;
-			navMesh.Resume ();
-			_anim.SetBool ("isRunning", true);
-		}*/
+		}
 	}
 
 	IEnumerator ClearZombie () {
-		GameManager.gm.player.isAttack = false;
-		GameManager.gm.player.currentTarget = null;
-		//GameManager.gm.player.ModifyExperience (expGain);
-		//popPotion ();
+		GameManager.gm.player.ModifyExperience (expGain);
 		yield return new WaitForSeconds (4.0f);
-		navMesh.enabled = false;
+		this._agent.enabled = false;
 		yield return new WaitForSeconds (1.0f);
-		GameObject.Destroy (gameObject);
-	}
-
-	private void OnDrawGizmos() {
-		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere (transform.position, radiusPursuit);
+		GameObject.Destroy (this.gameObject);
 	}
 
 }

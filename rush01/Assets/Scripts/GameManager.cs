@@ -4,22 +4,20 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
 
 	static public GameManager	gm;
-	public	GameObject			camera;
-	public	Player			player;
-	public Zombie 				onEnemy;
+	public Player				player;
+	public int					level = 1;
 
 	void Awake () {
 		if (gm == null)
 			gm = this;
 	}
-
-	// Use this for initialization
+	
 	void Start () {
-	
+		this.player = GameObject.FindGameObjectWithTag ("Player").transform.GetComponent<Player>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
+	public void LevelUp() {
+		Debug.Log ("LEVEL UP! (" + this.level + ")");
+		this.level++;
 	}
 }

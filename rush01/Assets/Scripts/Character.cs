@@ -4,43 +4,60 @@ using System.Collections;
 
 public class Character : MonoBehaviour {
 
-	public 		float 			force, agility, constitution, armor;
-	//public 		Renderer 		rend;
-	//public 		GameObject 		ragdoll;
+	public float 		health;
+	public float		mana;
 
-	[HideInInspector]
-	public GameObject			currentTarget;
-	public Arme					arme;
+	public float 		force;
+	public float		agility;
+	public float		constitution;
+	public float		armor;
 
-	protected 	NavMeshAgent	navMesh;	
-	protected 	float 			health,mana;
-	protected 	float 			maxHealth,maxMana;
-	protected 	bool 			dead = false;
-	protected 	int 			level = 1;
-	protected 	Color 			color;
-	public	bool			isAttack;
+	public Arme				arme;
+	public bool				isAttack;
+
+	protected NavMeshAgent	_agent;
+	protected Animator		_anim;
 	
+	protected bool			_isAttacking;
+	protected Vector3		_currentTargetPosition;
+	protected float 		_maxHealth;
+	protected float			_maxMana;
+	protected bool 			_dead = false;
+	protected Color 		_color;
+	protected bool			_animAttack;
 
+	[HideInInspector]public GameObject		currentTarget;
 
 	// Use this for initialization
 	protected virtual void Awake () {
-		health = 100;
-		mana = 100;
-		maxHealth = health;
-		maxMana = mana;
-		navMesh = GetComponent<NavMeshAgent> ();
+		this.health = this.constitution * 5;
+		this.mana = 100;
+		this._maxHealth = this.health;
+		this._maxMana = this.mana;
+	}
+
+	protected virtual void Start() {
+		this._agent = this.GetComponent<NavMeshAgent> ();
+		this._anim = this.GetComponent<Animator> ();
+	}
+
+
+	public bool IsDead() {
+		if (this.health <= 0 || this._dead)
+			return (true);
+		return (false);
 	}
 
 	public void ModifyHealth (float amount) {
-		if( dead ) 
+		if (this._dead)
 			return;
-		health += amount;
-		if( health < 0 ) {
-			health = 0;
-			Die();
+		this.health += amount;
+		if (this.health < 0) {
+			this.health = 0;
+			this.Die();
 		}
-		else if( health > maxHealth ) 
-			health = maxHealth;
+		else if (this.health > this._maxHealth) 
+			this.health = this._maxHealth;
 		if( amount > 0 ) {
 			Debug.Log("PRENDRE POTION");
 			/*GameObject potion = (GameObject)Instantiate(healthPotion,potionHolder.position,Quaternion.identity);
@@ -49,8 +66,8 @@ public class Character : MonoBehaviour {
 			StartCoroutine("DrinkPotion",potion);*/
 		}
 		else {
-			if( health > 0 )
-				StartCoroutine( "GetHit" );
+//			if( health > 0 )
+//				StartCoroutine( "GetHit" );
 		}
 		//healthBar.fillAmount = health / maxHealth;
 	}
@@ -63,32 +80,48 @@ public class Character : MonoBehaviour {
 	}*/
 
 	protected virtual void Die() {
+		this._anim.SetBool ("isAttack", false);
+		this._anim.SetBool ("isDeath", true);
 		//ragdoll.SetActive( true );
 		//ragdoll.GetComponent<AudioSource>().volume = 0.5f;
 		//ragdoll.GetComponent<AudioSource>().PlayOneShot( deadSound );
-		gameObject.SetActive( false );
-		dead = true;
+//		gameObject.SetActive( false );
+		this._dead = true;
 	}
 
-	public bool isDead () {
-		return dead;
-	}
-
-	protected void receiveDamage(float damage, float agiAdverse) {
-		if (Random.Range (1, 101) <= 75 + agiAdverse - this.agility) {
+	public void receiveDamage(float damage, Character oppenent) {
+		if (Random.Range (1, 101) <= 75 + oppenent.agility - this.agility) {
 			damage *= (1 - this.armor / 200);
-			ModifyHealth(-damage);
+			this.ModifyHealth(-damage);
 		}
 	}
 
 	public float DamageAttackMeele() {
-		return (Random.Range (this.arme.damageMin, this.arme.damageMax + 1) + this.force);
+		return (this.arme.damage + this.force);
 	}
 
-	/*void OnTriggerEnter (Collider col) {
-		if (col.CompareTag ("weapon")) {
-			Debug.Log (this.name + " touched by " + col.name);
-			//receiveDamage(attacker.DamageAttackMeele(), attacker.agility);
-		}
-	}*/
+	protected virtual void Attack () {
+		this.transform.LookAt(this.currentTarget.transform.position);
+		if (!this._animAttack)
+			StartCoroutine (oneAttack ());
+	}
+	
+	IEnumerator oneAttack () {
+		this._anim.SetTrigger ("isAttack");
+		this._animAttack = true;
+		this.currentTarget.transform.GetComponent<Character> ().receiveDamage (this.DamageAttackMeele (), this);
+		yield return new WaitForSeconds (this.arme.speed);
+		this._animAttack = false;
+	}
+
+	public bool TargetIsAlive() {
+		return (this.currentTarget && this.currentTarget.transform.GetComponent<Character> () && !this.currentTarget.transform.GetComponent<Character> ().IsDead ());
+	}
+
+	public bool TargetIsCloseToMe() {
+		if (this.currentTarget && Vector3.Distance (this.currentTarget.transform.position, this.transform.position) > this._agent.stoppingDistance)
+			return (false);
+		return (true);
+	}
+
 }

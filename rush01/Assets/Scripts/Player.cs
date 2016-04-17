@@ -3,20 +3,18 @@ using System.Collections;
 
 public class Player : Character {
 	
-	//    private    GameObject        _currentTarget;
-	private    Vector3        _currentTargetPosition;
-	private    bool            _isAttacking;
-	//    private    NavMeshAgent    _agent;
-	private Animator        _anim;
-	private    bool            _orderToAction;
+	protected bool			_orderToAction;
 	
-	public float            cameraX;
-	public float            cameraY = 10f;
-	public float            cameraZ = -10f;
-	
-	void Start() {
-		//        _agent = this.GetComponent<NavMeshAgent> ();
-		_anim = this.GetComponent<Animator> ();
+	public float			cameraX;
+	public float			cameraY = 10f;
+	public float			cameraZ = -10f;
+
+	public float			xpMax = 400f;
+	protected float			_xpCurrent;
+
+	protected override void Awake() {
+		base.Awake ();
+		this._xpCurrent = 0f;
 	}
 	
 	protected void Update() {
@@ -25,16 +23,15 @@ public class Player : Character {
 		if (currentTarget) 
 			this.HasCurrentTarget ();
 	}
-	
+
 	void HasCurrentTarget() {
-		float my_distance = currentTarget.tag == "enemy" ? 2f : 0.5f;
-		if (Vector3.Distance (_currentTargetPosition, transform.position) < my_distance && _orderToAction) {
-			Debug.Log("wesh");
+		float my_distance = this.currentTarget.tag == "Enemy" ? 2f : 0.5f;
+		if (Vector3.Distance (this._currentTargetPosition, this.transform.position) < my_distance && this._orderToAction) {
 			this._anim.SetBool ("isRunning", false);
-			Action ();
+			this.Action ();
 		}
 		else
-			Run ();
+			this.Run ();
 	}
 	
 	void FixCamera() {
@@ -44,44 +41,49 @@ public class Player : Character {
 	void Click() {
 		Ray         rayPos;
 		RaycastHit    hit;
-		
-		if (Input.GetMouseButton (0)) {
-			
+
+
+		if (Input.GetMouseButton (0)) {		
+			this._orderToAction = true;
+
 			rayPos = Camera.main.ScreenPointToRay (Input.mousePosition);
 			if (Physics.Raycast (rayPos, out hit, 100)) {
-				this._orderToAction = true;
 				if (Input.GetMouseButtonDown (0)) {
 					this.currentTarget = hit.transform.gameObject;
 				}
-				if (this.currentTarget.tag != "enemy")
-					this._currentTargetPosition = hit.point;
-				else
+				if (TargetIsAlive()) {
 					this._currentTargetPosition = this.currentTarget.transform.position;
+				} else {
+					this._currentTargetPosition = hit.point;
+				}
 			}
 		}
-		if (!_anim.GetBool("isRunning") && !_orderToAction)
-			currentTarget = null;
+
+		if (!this._anim.GetBool("isRunning") && !this._orderToAction)
+			this.currentTarget = null;
 		
 	}
 	
-	void Action() {//this function exists because its good if we have others actions than attack
-		if (this.currentTarget.CompareTag ("enemy"))
-			Attack ();
+	void Action() { //this function exists because its good if we have others actions than attack
+		if (this.TargetIsAlive() && this.currentTarget.CompareTag ("Enemy"))
+			this.Attack ();
 		this._orderToAction = false;
-	}
-	
-	void Attack() {
-		transform.LookAt (this.currentTarget.transform.position);
-		this._anim.SetTrigger ("isAttack");
-		//target.GetComponent<Character>().GetHit ();
 	}
 	
 	protected virtual void Run() {
 		this._anim.ResetTrigger ("isAttack");
-		this.navMesh.destination = this._currentTargetPosition;
-		this.navMesh.Resume();
-		if (this.navMesh.hasPath) {
+		this._agent.destination = this._currentTargetPosition;
+		this._agent.Resume();
+		if (this._agent.hasPath) {
 			this._anim.SetBool ("isRunning", true);
 		}
-	}    
+	}
+
+	public void ModifyExperience(float exp) {
+		this._xpCurrent += exp;
+		if (this._xpCurrent >= this.xpMax) {
+			this._xpCurrent -= this.xpMax;
+			GameManager.gm.LevelUp();
+		}
+	}
 }
