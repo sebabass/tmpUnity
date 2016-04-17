@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject			levelUpParticle;
 	public int					competencePoints;
 	public int					skillPoints;
-	public GameObject           onEnemy;
+	public Enemy           		onEnemy;
 
 	void Awake () {
 		if (gm == null)

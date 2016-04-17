@@ -7,7 +7,7 @@ public class interfacePlayer : MonoBehaviour {
 	public float _health, _exp, _mana, _armo, _con, _maxHealth, _maxMana, _expToLevel, _level, _strength, _agi, _pointComp, _pointSkills;
 
 	public Image healthBar,expBar,manaBar;
-	public Image healthBarEnemy, expBarEnemy, manaBarEnemy;
+	public Image healthBarEnemy;
 	// Use this for initialization
 	void Start () {
 	}
@@ -20,9 +20,14 @@ public class interfacePlayer : MonoBehaviour {
 		manaBar.fillAmount = _mana / _maxMana;
 
 		if (GameManager.gm.onEnemy) {
-			healthBar.fillAmount = GameManager.gm.onEnemy.health / GameManager.gm.onEnemy.GetMaxHealth();
+			healthBarEnemy.fillAmount = GameManager.gm.onEnemy.health / GameManager.gm.onEnemy.GetMaxHealth ();
+			GameObject.Find("enemyName").GetComponent<Text>().text = GameManager.gm.onEnemy.name;
 		} else if (GameManager.gm.player.currentTarget && GameManager.gm.player.currentTarget.tag == "enemy") {
-			healthBar.fillAmount = GameManager.gm.player.health / GameManager.gm.player.GetMaxHealth();
+			healthBarEnemy.fillAmount = GameManager.gm.player.currentTarget.GetComponent<Enemy>().health / GameManager.gm.player.currentTarget.GetComponent<Enemy>().GetMaxHealth ();
+			GameObject.Find("enemyName").GetComponent<Text>().text = GameManager.gm.player.currentTarget.GetComponent<Enemy>().name;
+		} else {
+			healthBarEnemy.fillAmount = 0.0f;
+			GameObject.Find("enemyName").GetComponent<Text>().text = "";
 		}
 	}
 
