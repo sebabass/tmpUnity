@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Ennemy : Character {
+public class Enemy : Character {
 
 	protected float radiusPursuit = 10.0f;
 	protected float	expGain;
@@ -25,6 +25,14 @@ public class Ennemy : Character {
 		else {
 			this.OnEnemy();
 		}
+	}
+
+	public void UpdateCaracs() {
+		this.agility += this.agility * 0.15f * (float)(GameManager.gm.level - 1);
+		this.armor += this.armor * 0.15f * (float)(GameManager.gm.level - 1);
+		this.constitution += this.constitution * 0.15f * (float)(GameManager.gm.level - 1);
+		this.force += this.force * 0.15f * (float)(GameManager.gm.level - 1);
+		this.health = this.constitution * 5f;
 	}
 
 	void Detection() {

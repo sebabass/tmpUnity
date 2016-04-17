@@ -13,6 +13,7 @@ public class Character : MonoBehaviour {
 	public float		armor;
 
 	public Arme				arme;
+
 	public bool				isAttack;
 
 	protected NavMeshAgent	_agent;
@@ -90,6 +91,7 @@ public class Character : MonoBehaviour {
 	}
 
 	public void receiveDamage(float damage, Character oppenent) {
+		Debug.Log (this.name + " recive " + damage + " damage");
 		if (Random.Range (1, 101) <= 75 + oppenent.agility - this.agility) {
 			damage *= (1 - this.armor / 200);
 			this.ModifyHealth(-damage);

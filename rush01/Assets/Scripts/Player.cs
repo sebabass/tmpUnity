@@ -10,23 +10,47 @@ public class Player : Character {
 	public float			cameraZ = -10f;
 
 	public float			xpMax = 400f;
-	protected float			xpCurrent;
+	protected float			_xpCurrent;
+
+	public GameObject		weapons;
+	public Arme[]			weapon;
 
 	protected override void Awake() {
 		base.Awake ();
-		this.xpCurrent = 0f;
+		this._xpCurrent = 0f;
+		this.weapon = this.weapons.GetComponentsInChildren<Arme> ();
+	}
+
+	protected override void Start() {
+		base.Start ();
+		for (int i = 0; i < this.weapon.Length; i++) {
+			this.weapon[i].gameObject.SetActive(false);
+		}
 	}
 	
 	protected void Update() {
 		this.FixCamera ();
 		this.Click ();
+		this.CheckWeapon ();
 		if (currentTarget) 
 			this.HasCurrentTarget ();
 	}
 
+	void CheckWeapon() {
+		for (int i = 0; i < this.weapon.Length; i++) {
+			if (this.weapon[i].gameObject.activeSelf) {
+				this.arme = this.weapon[i];
+			}
+		}
+	}
+
+	public float GetCurrentXp() {
+		return (this._xpCurrent);
+	}
+
 	void HasCurrentTarget() {
-		float my_distance = currentTarget.tag == "Enemy" ? 2f : 0.5f;
-		if ((!TargetIsAlive() && Vector3.Distance (_currentTargetPosition, transform.position) < my_distance) || (TargetIsAlive() && Vector3.Distance (this.currentTarget.transform.position, transform.position) < my_distance) && _orderToAction) {
+		float my_distance = this.currentTarget.tag == "Enemy" ? 2f : 0.5f;
+		if ((!this.TargetIsAlive() && Vector3.Distance (this._currentTargetPosition, this.transform.position) < my_distance) || (this.TargetIsAlive() && Vector3.Distance (this.currentTarget.transform.position, this.transform.position) < my_distance) && this._orderToAction) {
 			this._anim.SetBool ("isRunning", false);
 			Action ();
 		}
@@ -39,9 +63,8 @@ public class Player : Character {
 	}
 	
 	void Click() {
-		Ray         rayPos;
-		RaycastHit    hit;
-
+		Ray rayPos;
+		RaycastHit hit;
 
 		if (Input.GetMouseButton (0)) {		
 			this._orderToAction = true;
@@ -57,14 +80,14 @@ public class Player : Character {
 			}
 		}
 
-		if (!_anim.GetBool("isRunning") && !_orderToAction)
-			currentTarget = null;
+		if (!this._anim.GetBool("isRunning") && !this._orderToAction)
+			this.currentTarget = null;
 		
 	}
 	
 	void Action() {//this function exists because its good if we have others actions than attack
-		if (TargetIsAlive() && this.currentTarget.CompareTag ("Enemy"))
-			Attack ();
+		if (this.arme && this.TargetIsAlive() && this.currentTarget.CompareTag ("Enemy"))
+			this.Attack ();
 		this._orderToAction = false;
 	}
 	
@@ -82,9 +105,9 @@ public class Player : Character {
 	}
 
 	public void ModifyExperience(float exp) {
-		this.xpCurrent += exp;
-		if (this.xpCurrent >= this.xpMax) {
-			this.xpCurrent -= this.xpMax;
+		this._xpCurrent += exp;
+		if (this._xpCurrent >= this.xpMax) {
+			this._xpCurrent -= this.xpMax;
 			GameManager.gm.LevelUp();
 		}
 	}

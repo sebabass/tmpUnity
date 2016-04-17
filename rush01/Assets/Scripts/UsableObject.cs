@@ -10,7 +10,7 @@ public class UsableObject : Stuff {
 	public	int	type = 0;
 	public	int	value = 0;
 
-	void Start () {
+	protected override void Start () {
 		value *= rareRange;
 	}
 }

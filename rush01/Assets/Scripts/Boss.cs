@@ -1,15 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Boss : Ennemy {
-
-	// Use this for initialization
-	void Start () {
+public class Boss : Enemy {
 	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }
