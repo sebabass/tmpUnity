@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
 	public int					level = 1;
 	public GameObject			levelUpParticle;
 	public int					competencePoints;
+	public int					skillPoints;
+	public Enemy           		onEnemy;
 
 	public GameObject[]			lootPotions;
 	public GameObject[]			lootWeapons;
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		this.player = GameObject.FindGameObjectWithTag ("Player").transform.GetComponent<Player>();
 		this.competencePoints = 0;
+		this.skillPoints = 0;
 	}
 
 	void Update() {
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour {
 	public void LevelUp() {
 		this.player.LevelUp ();
 		this.competencePoints += 5;
+		this.skillPoints += 1;
 		Debug.Log ("LEVEL UP! (" + this.level + ")");
 		StartCoroutine (coLevelUp ());
 		this.level++;

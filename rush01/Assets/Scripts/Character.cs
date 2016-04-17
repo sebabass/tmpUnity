@@ -96,7 +96,7 @@ public class Character : MonoBehaviour {
 	}
 
 	public float DamageAttackMeele() {
-		return (this.arme.damage + this.force);
+		return (Random.Range (this.arme.damageMin, this.arme.damageMax) + this.force);
 	}
 
 	protected virtual void Attack () {

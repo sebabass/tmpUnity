@@ -34,7 +34,8 @@ public class Tooltip : MonoBehaviour {
 								"\n" + "Force : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Force").ToString() + "</color>" + 
 								"\n" + "Agility : " + "<color=green>"+ Slot.inspectedSlot.GetItemAttribute("Agility").ToString() + "</color>" + 
 								"\n" + "Constitution : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Constitution").ToString() + "</color>" +
-								"\n" + "Damage : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Damage").ToString() + "</color>" + 
+								"\n" + "Damage min : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Damage min").ToString() + "</color>" + 
+								"\n" + "Damage max : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Damage max").ToString() + "</color>" + 
 								"\n" + "Speed : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Speed").ToString() + "</color>" + 
 								"\n\n\n" + Slot.inspectedSlot.ItemDescription;
 	}
