@@ -6,7 +6,6 @@ using UnityEditor;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 
-[AddComponentMenu("Inventory/Container")]
 public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IPointerClickHandler,IPointerEnterHandler,IPointerExitHandler {
 
 	// Initial item
@@ -50,7 +49,9 @@ public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IP
 
 	// Here the events that can happen on a slot, are defined
 	public delegate void EventTemplate();
+	public delegate void EventCustomTemplate(GameObject go);
 	public event EventTemplate OnChange;
+	public static event EventCustomTemplate OnEquipmentChangeCustom;
 	public static event EventTemplate OnInspectedChange;
 	public static event EventTemplate OnEquipmentChange;
 	public static event EventTemplate OnItemDrop;
@@ -122,8 +123,10 @@ public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IP
 			}
 			if (OnChange != null)
 				OnChange();
-			if (OnEquipmentChange != null)
+			if (OnEquipmentChange != null) {
 				OnEquipmentChange();
+				OnEquipmentChangeCustom(_currentItem.gameObject);
+			}
 		} 
 	}
 
@@ -150,8 +153,10 @@ public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IP
 			}
 			if (OnChange != null)
 				OnChange();
-			if (OnEquipmentChange != null)
+			if (OnEquipmentChange != null) {
 				OnEquipmentChange();
+				OnEquipmentChangeCustom(null);
+			}
     }
 
 
@@ -176,8 +181,10 @@ public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IP
 	       
 			if (OnChange != null)
 				OnChange();
-			if (OnEquipmentChange != null)
+			if (OnEquipmentChange != null) {
 				OnEquipmentChange();
+				OnEquipmentChangeCustom(_currentItem.gameObject);
+			}
 
 	        return replaced;
 		}
@@ -223,8 +230,9 @@ public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IP
 
 			if (OnChange != null)
 				OnChange();
-			if (OnEquipmentChange != null)
+			if (OnEquipmentChange != null) {
 				OnEquipmentChange();
+			}
 		}
 	}
 
@@ -285,8 +293,9 @@ public class Slot : Selectable,IBeginDragHandler,IDragHandler,IEndDragHandler,IP
 			
 				if (OnChange != null)
 					OnChange();
-				if (OnEquipmentChange != null)
+				if (OnEquipmentChange != null) {
 					OnEquipmentChange();
+				}
 			}
         }   
     }

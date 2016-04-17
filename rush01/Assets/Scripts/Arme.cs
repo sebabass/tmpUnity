@@ -11,22 +11,25 @@ public class Arme : Stuff {
 	public	float	speed;
 
 	private	string	rangName;
-
+	
 	protected override void Start () {
 		base.Start ();
-		Debug.Log ("range: " +rareRange);
 		int tmp = Random.Range (1, rareRange);
 		force *= tmp + GameManager.gm.level;
 		agi *= tmp + GameManager.gm.level;
 		con *= tmp + GameManager.gm.level;
 		damage *= tmp + GameManager.gm.level;
 		rangName = rareName [tmp];
-		Debug.Log (rareName[tmp]);
-		if (tmp - 1 >= 0 && transform.root.tag != "enemy") {
-			Debug.Log ("tmp: " +  (tmp - 1));
+		Debug.Log (typeof(Slot));
+		Slot.OnEquipmentChangeCustom += EquipmentChange;
+		if (tmp - 1 >= 0 && transform.root.tag != "Enemy") {
 			ParticleSystem go = (ParticleSystem)Instantiate (rareParticle [tmp - 1], transform.position, Quaternion.identity);
 			go.gameObject.transform.SetParent(gameObject.transform);
 		}
 	}
 
+
+	void EquipmentChange(GameObject go) {
+		Debug.Log (go);
+	}
 }
