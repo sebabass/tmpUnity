@@ -17,7 +17,6 @@ public class Equipment : MonoBehaviour {
 
 	// This function changes the equipment or unequips everything,by case
 	public void ChangeEquipment () {
-		return;
 		if (slot.Populated) {
 			if ((activeEquipment != null && activeEquipment.itemID != slot.ItemID) || activeEquipment == null) {
 				foreach (var eq in equipments) {
@@ -25,8 +24,11 @@ public class Equipment : MonoBehaviour {
 						eq.targetGO.SetActive(true);
 						activeEquipment = eq;
 					}
-					else
+					else {
+					if ( eq == null || eq.targetGO == null )
+						continue;
 						eq.targetGO.SetActive(false);
+					}
 				}
 			}
 		}
@@ -37,6 +39,8 @@ public class Equipment : MonoBehaviour {
 
 	void UnequipAll() {
 		foreach (var eq in equipments) {
+			if ( eq == null || eq.targetGO == null)
+				continue;
 			eq.targetGO.SetActive(false);
 		}
 		activeEquipment = null;

@@ -20,8 +20,6 @@ public class Arme : Stuff {
 		con *= tmp + GameManager.gm.level;
 		damage *= tmp + GameManager.gm.level;
 		rangName = rareName [tmp];
-		Debug.Log (typeof(Slot));
-		Slot.OnEquipmentChangeCustom += EquipmentChange;
 		if (tmp - 1 >= 0 && transform.root.tag != "Enemy") {
 			ParticleSystem go = (ParticleSystem)Instantiate (rareParticle [tmp - 1], transform.position, Quaternion.identity);
 			go.gameObject.transform.SetParent(gameObject.transform);

@@ -98,6 +98,7 @@ public class Container : MonoBehaviour {
 
 	// This method checks all the slots for a recipe,and if some formula is found,then it shows a preview of the result
 	public void CheckForRecipe( bool rec ) {
+		Debug.Log ("Hello");
 		int foundRecipe = -1;
 		int amount = 1;
 		int startingToCountFrom = 0;

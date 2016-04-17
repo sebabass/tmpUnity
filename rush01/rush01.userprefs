@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Content/Scripts/Runtime/Slot.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Arme.cs" Line="23" Column="1" />
+      <File FileName="Assets/Content/Scripts/Runtime/Slot.cs" Line="1" Column="1" />
+      <File FileName="Assets/Content/Scripts/Runtime/Container.cs" Line="1" Column="1" />
+      <File FileName="Assets/Content/Scripts/Runtime/InventoryManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Content/Scripts/Runtime/InventoryWindow.cs" Line="1" Column="1" />
+      <File FileName="Assets/Content/Samples/Rpg/Scripts/Equipment.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
