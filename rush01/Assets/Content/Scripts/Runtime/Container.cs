@@ -20,6 +20,8 @@ public class Container : MonoBehaviour {
 	
 	public bool visible = true;
 	public Vector3 scale;
+
+	private int alpha = 1;
 	
 	private List<Slot> slots = new List<Slot>();
 
@@ -168,4 +170,17 @@ public class Container : MonoBehaviour {
 				transform.localScale = Vector3.zero;
 		}
 	}
+
+	public void statsAffiche() {
+		if (alpha == 1) {
+			alpha = 0;
+			GameObject.Find ("statsContainers").GetComponent<CanvasGroup> ().blocksRaycasts = false;
+		}
+		else {
+			alpha++;
+			GameObject.Find ("statsContainers").GetComponent<CanvasGroup> ().blocksRaycasts = true;
+		}
+		GameObject.Find ("statsContainers").GetComponent<CanvasGroup> ().alpha = alpha;
+	}
+
 }
