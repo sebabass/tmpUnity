@@ -31,10 +31,11 @@ public class Tooltip : MonoBehaviour {
 		Text text = tooltip.GetComponentInChildren<Text>();
 		if (Slot.inspectedSlot.Populated)
 			text.text = "<b>" + Slot.inspectedSlot.ItemName + "</b>" +
+								"\n" + "Force : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Force").ToString() + "</color>" + 
+								"\n" + "Agility : " + "<color=green>"+ Slot.inspectedSlot.GetItemAttribute("Agility").ToString() + "</color>" + 
+								"\n" + "Constitution : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Constitution").ToString() + "</color>" +
 								"\n" + "Damage : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Damage").ToString() + "</color>" + 
-								"\n" + "Defense : " + "<color=green>"+ Slot.inspectedSlot.GetItemAttribute("Defense").ToString() + "</color>" + 
-								"\n" + "Weight : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Weight").ToString() + "</color>" + 
-								"\n" + "Value : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Value").ToString() + "</color>" + 
+								"\n" + "Speed : " + "<color=green>" + Slot.inspectedSlot.GetItemAttribute("Speed").ToString() + "</color>" + 
 								"\n\n\n" + Slot.inspectedSlot.ItemDescription;
 	}
 
