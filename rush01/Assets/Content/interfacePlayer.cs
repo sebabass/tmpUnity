@@ -18,6 +18,12 @@ public class interfacePlayer : MonoBehaviour {
 		healthBar.fillAmount = _health / _maxHealth;
 		expBar.fillAmount = _exp / _expToLevel;
 		manaBar.fillAmount = _mana / _maxMana;
+
+		if (GameManager.gm.onEnemy) {
+			healthBar.fillAmount = GameManager.gm.onEnemy.health / GameManager.gm.onEnemy.GetMaxHealth();
+		} else if (GameManager.gm.player.currentTarget && GameManager.gm.player.currentTarget.tag == "enemy") {
+			healthBar.fillAmount = GameManager.gm.player.health / GameManager.gm.player.GetMaxHealth();
+		}
 	}
 
 	public void GetVal() {
