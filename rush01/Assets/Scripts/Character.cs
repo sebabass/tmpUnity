@@ -4,6 +4,10 @@ using System.Collections;
 
 public class Character : MonoBehaviour {
 
+
+	public AudioSource	die_audio;
+	public AudioSource	attack_audio;
+
 	public float 		health;
 	public float		mana;
 
@@ -85,6 +89,7 @@ public class Character : MonoBehaviour {
 		this._anim.SetBool ("isAttack", false);
 		this._anim.SetBool ("isDeath", true);
 		this._dead = true;
+		die_audio.Play ();
 	}
 
 	public void receiveDamage(float damage, Character oppenent) {
@@ -111,6 +116,8 @@ public class Character : MonoBehaviour {
 		this.currentTarget.transform.GetComponent<Character> ().receiveDamage (this.DamageAttackMeele (), this);
 		yield return new WaitForSeconds (this.arme.speed);
 		this._animAttack = false;
+
+		attack_audio.Play ();
 	}
 
 	IEnumerator coRegenHP() {
