@@ -33,35 +33,35 @@ public class myStats : MonoBehaviour {
 			switch (i) {
 				case 0 :
 					GameManager.gm.player.agility++;
-					playerInterface._pointComp--;
+					GameManager.gm.competencePoints--;
 					break;
 				case 1 :
 					GameManager.gm.player.force++;
-					playerInterface._pointComp--;
+					GameManager.gm.competencePoints--;
 					break;
 				case 2 :
 					GameManager.gm.player.armor++;
-					playerInterface._pointComp--;
+					GameManager.gm.competencePoints--;
 					break;
 				case 3 :
 					GameManager.gm.player.constitution++;
-					playerInterface._pointComp--;
+					GameManager.gm.competencePoints--;
 					break;
 				case 4 :
 					GameManager.gm.player.agility--;
-					playerInterface._pointComp++;
+					GameManager.gm.competencePoints++;
 					break;
 				case 5 :
 					GameManager.gm.player.force--;
-					playerInterface._pointComp++;
+					GameManager.gm.competencePoints++;
 					break;
 				case 6 :
 					GameManager.gm.player.armor--;
-					playerInterface._pointComp++;
+					GameManager.gm.competencePoints++;
 					break;
 				case 7 :
 					GameManager.gm.player.constitution--;
-					playerInterface._pointComp++;
+					GameManager.gm.competencePoints++;
 					break;
 			}
 		}
