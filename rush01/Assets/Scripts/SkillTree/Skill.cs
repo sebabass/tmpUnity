@@ -31,7 +31,7 @@ public class Skill : SkillInformations {
 
 	public void						use() {
 		this._skillScript.setImpacted( this._skillScript.getImpacted() );
-		this._skillScript.exec();
+		this._skillScript.exec( this._currentLevel );
 	}
 
 	public void UpdateUserSkills() {

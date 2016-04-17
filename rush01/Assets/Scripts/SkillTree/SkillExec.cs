@@ -30,7 +30,7 @@ public class SkillExec : MonoBehaviour {
 		this._skillAnnimation.instantiateAnimation();
 	}
 
-	public void exec() {
+	public void exec( int level ) {
 		if ( this._type == skillType.time && this._execTime > Time.fixedTime )
 			return ;
 		this.animate();
@@ -38,8 +38,8 @@ public class SkillExec : MonoBehaviour {
 
 		if ( this.impacted == null )
 			return ;
-		this.impacted.force += this._force;
-		this.impacted.ModifyHealth( this._life );
+		this.impacted.force += this._force * (level + 1);
+		this.impacted.ModifyHealth( this._life * (level + 1) );
 	}
 
 	public GameObject getImpacted() {
