@@ -7,8 +7,9 @@ public class Arme : Stuff {
 	public	float	force;
 	public	float	agi;
 	public	float	con;
-	public	float	damage;
 	public	float	speed;
+	public 	float	damageMin;
+	public 	float	damageMax;
 
 	private	string	rangName;
 	
@@ -18,7 +19,8 @@ public class Arme : Stuff {
 		force *= tmp + GameManager.gm.level;
 		agi *= tmp + GameManager.gm.level;
 		con *= tmp + GameManager.gm.level;
-		damage *= tmp + GameManager.gm.level;
+		damageMin *= tmp + GameManager.gm.level;
+		damageMax *= tmp + GameManager.gm.level;
 		rangName = rareName [tmp];
 		if (tmp - 1 >= 0 && transform.root.tag != "Enemy") {
 			ParticleSystem go = (ParticleSystem)Instantiate (rareParticle [tmp - 1], transform.position, Quaternion.identity);
