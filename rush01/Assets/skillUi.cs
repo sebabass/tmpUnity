@@ -20,6 +20,7 @@ public class skillUi : MonoBehaviour {
 				GameObject btn = GameObject.Instantiate( this._btnPrefab );
 				btn.transform.SetParent( this.transform );
 				btn.GetComponent<Button>().onClick.AddListener(() => Buy( obj ));
+				btn.GetComponent<Image>().sprite = skill.getSkillImage();
 			}
 
 		}

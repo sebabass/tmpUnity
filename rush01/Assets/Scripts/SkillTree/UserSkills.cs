@@ -133,7 +133,7 @@ public class UserSkills : MonoBehaviour {
 		Skill skillClass = skill.GetComponent<Skill>();
 		
 		skillClass.UpdateUserSkills();
-		if ( skillClass.Unlock() == false && this.SkillAlreadyOwn( skillClass.getName() ) == false ) {
+		if (this.SkillAlreadyOwn( skillClass.getName() ) == false && skillClass.Unlock() == false ) {
 			GameObject.Destroy( skill );
 			return false;
 		}
@@ -171,7 +171,6 @@ public class UserSkills : MonoBehaviour {
 	}
 	
 	public int			getUserStep() {
-		//		int		userLevel = GameManager.gm.level; // Get User Level ? Right ?
 		int		userLevel = GameManager.gm.level;
 		return Mathf.FloorToInt( userLevel / UserSkills.levelPerStep );
 	}

@@ -4,8 +4,8 @@ using System.Collections;
 
 public abstract class SkillInformations : MonoBehaviour {
 	[SerializeField]  protected		string			_name;
-	[SerializeField]  protected		Image			_enable;
-	[SerializeField]  protected		Image			_disable;
+	[SerializeField]  protected		Sprite			_enable;
+	[SerializeField]  protected		Sprite			_disable;
 
 	[SerializeField] protected		int				_treeIndex;
 	[SerializeField] protected		int				_treePosition;
@@ -19,15 +19,15 @@ public abstract class SkillInformations : MonoBehaviour {
 		return this._name;
 	}
 
-	public				Image		getSkillImage() {
+	public				Sprite	getSkillImage() {
 		if ( this.isOwned() == false ) {
 			return this._disable;
 		}
-		float alpha = (( 0.5f / this.getMaxLevel()) * this.getLevel()) + 0.5f;
-		Color color = this._enable.color;
-
-		color.a = alpha;
-		this._enable.color = color;
+//		float  alpha = (( 0.5f / this.getMaxLevel()) * this.getLevel()) + 0.5f;
+//		Color color = this._enable.color;
+//
+//		color.a = alpha;
+//		this._enable.color = color;
 		return this._enable;
 	}
 
