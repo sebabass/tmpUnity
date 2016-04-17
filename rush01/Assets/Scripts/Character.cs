@@ -115,14 +115,14 @@ public class Character : MonoBehaviour {
 
 	IEnumerator coRegenHP() {
 		while (true) {
-			this.ModifyHealth(5f);
+			this.ModifyHealth(this._maxHealth / 60f);
 			yield return new WaitForSeconds(1f);
 		}
 	}
 
 	IEnumerator coRegenMana() {
 		while (true) {
-			this.ModifyMana(2f);
+			this.ModifyMana(this._maxMana / 60f);
 			yield return new WaitForSeconds(1f);
 		}
 	}

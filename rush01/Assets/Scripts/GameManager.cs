@@ -26,8 +26,10 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Update() {
-		if (Input.GetKeyDown(KeyCode.L)) {
-			this.LevelUp();
+		if (Input.GetKeyDown (KeyCode.L)) {
+			this.LevelUp ();
+		} else if (Input.GetKeyDown (KeyCode.K)) {
+			this.Drop (this.transform.position);
 		}
 	}
 
