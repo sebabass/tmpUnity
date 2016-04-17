@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour {
 	public GameObject			levelUpParticle;
 	public int					competencePoints;
 
+	public GameObject[]			lootPotions;
+	public GameObject[]			lootWeapons;
+
 	void Awake () {
 		if (gm == null)
 			gm = this;
@@ -40,4 +43,17 @@ public class GameManager : MonoBehaviour {
 		yield return new WaitForSeconds(3f);
 		GameObject.Destroy (levelParticle);
 	}
+
+	public void Drop(Vector3 pos) {
+		if (Random.Range (0, 5) == 0) {
+			int potion = Random.Range (0, 4);
+
+			if (potion == 0) {
+				Instantiate (this.lootPotions [Random.Range (0, this.lootPotions.Length)], pos, Quaternion.identity);
+			} else {
+				Instantiate (this.lootWeapons [Random.Range (0, this.lootWeapons.Length)], pos, Quaternion.identity);
+			}
+		}
+	}
+	
 }
