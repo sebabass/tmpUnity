@@ -14,7 +14,8 @@ public class Displayer : MonoBehaviour {
 
     void Start () {
 		parentSlot = GetComponentInParent<Slot>();
-		parentSlot.OnChange += OnChange;
+		if ( parentSlot != null )
+			parentSlot.OnChange += OnChange;
 	}
 
 	void OnChange () {

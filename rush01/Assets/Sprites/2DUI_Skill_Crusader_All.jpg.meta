@@ -1,0 +1,1596 @@
+fileFormatVersion: 2
+guid: f87bfc5df52474ef2a1ecf98a4e600d5
+timeCreated: 1460913484
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: 2DUI_Skill_Crusader_All_0
+    21300002: 2DUI_Skill_Crusader_All_1
+    21300004: 2DUI_Skill_Crusader_All_2
+    21300006: 2DUI_Skill_Crusader_All_3
+    21300008: 2DUI_Skill_Crusader_All_4
+    21300010: 2DUI_Skill_Crusader_All_5
+    21300012: 2DUI_Skill_Crusader_All_6
+    21300014: 2DUI_Skill_Crusader_All_7
+    21300016: 2DUI_Skill_Crusader_All_8
+    21300018: 2DUI_Skill_Crusader_All_9
+    21300020: 2DUI_Skill_Crusader_All_10
+    21300022: 2DUI_Skill_Crusader_All_11
+    21300024: 2DUI_Skill_Crusader_All_12
+    21300026: 2DUI_Skill_Crusader_All_13
+    21300028: 2DUI_Skill_Crusader_All_14
+    21300030: 2DUI_Skill_Crusader_All_15
+    21300032: 2DUI_Skill_Crusader_All_16
+    21300034: 2DUI_Skill_Crusader_All_17
+    21300036: 2DUI_Skill_Crusader_All_18
+    21300038: 2DUI_Skill_Crusader_All_19
+    21300040: 2DUI_Skill_Crusader_All_20
+    21300042: 2DUI_Skill_Crusader_All_21
+    21300044: 2DUI_Skill_Crusader_All_22
+    21300046: 2DUI_Skill_Crusader_All_23
+    21300048: 2DUI_Skill_Crusader_All_24
+    21300050: 2DUI_Skill_Crusader_All_25
+    21300052: 2DUI_Skill_Crusader_All_26
+    21300054: 2DUI_Skill_Crusader_All_27
+    21300056: 2DUI_Skill_Crusader_All_28
+    21300058: 2DUI_Skill_Crusader_All_29
+    21300060: 2DUI_Skill_Crusader_All_30
+    21300062: 2DUI_Skill_Crusader_All_31
+    21300064: 2DUI_Skill_Crusader_All_32
+    21300066: 2DUI_Skill_Crusader_All_33
+    21300068: 2DUI_Skill_Crusader_All_34
+    21300070: 2DUI_Skill_Crusader_All_35
+    21300072: 2DUI_Skill_Crusader_All_36
+    21300074: 2DUI_Skill_Crusader_All_37
+    21300076: 2DUI_Skill_Crusader_All_38
+    21300078: 2DUI_Skill_Crusader_All_39
+    21300080: 2DUI_Skill_Crusader_All_40
+    21300082: 2DUI_Skill_Crusader_All_41
+    21300084: 2DUI_Skill_Crusader_All_42
+    21300086: 2DUI_Skill_Crusader_All_43
+    21300088: 2DUI_Skill_Crusader_All_44
+    21300090: 2DUI_Skill_Crusader_All_45
+    21300092: 2DUI_Skill_Crusader_All_46
+    21300094: 2DUI_Skill_Crusader_All_47
+    21300096: 2DUI_Skill_Crusader_All_48
+    21300098: 2DUI_Skill_Crusader_All_49
+    21300100: 2DUI_Skill_Crusader_All_50
+    21300102: 2DUI_Skill_Crusader_All_51
+    21300104: 2DUI_Skill_Crusader_All_52
+    21300106: 2DUI_Skill_Crusader_All_53
+    21300108: 2DUI_Skill_Crusader_All_54
+    21300110: 2DUI_Skill_Crusader_All_55
+    21300112: 2DUI_Skill_Crusader_All_56
+    21300114: 2DUI_Skill_Crusader_All_57
+    21300116: 2DUI_Skill_Crusader_All_58
+    21300118: 2DUI_Skill_Crusader_All_59
+    21300120: 2DUI_Skill_Crusader_All_60
+    21300122: 2DUI_Skill_Crusader_All_61
+    21300124: 2DUI_Skill_Crusader_All_62
+    21300126: 2DUI_Skill_Crusader_All_63
+    21300128: 2DUI_Skill_Crusader_All_64
+    21300130: 2DUI_Skill_Crusader_All_65
+    21300132: 2DUI_Skill_Crusader_All_66
+    21300134: 2DUI_Skill_Crusader_All_67
+    21300136: 2DUI_Skill_Crusader_All_68
+    21300138: 2DUI_Skill_Crusader_All_69
+    21300140: 2DUI_Skill_Crusader_All_70
+    21300142: 2DUI_Skill_Crusader_All_71
+    21300144: 2DUI_Skill_Crusader_All_72
+    21300146: 2DUI_Skill_Crusader_All_73
+    21300148: 2DUI_Skill_Crusader_All_74
+    21300150: 2DUI_Skill_Crusader_All_75
+    21300152: 2DUI_Skill_Crusader_All_76
+    21300154: 2DUI_Skill_Crusader_All_77
+    21300156: 2DUI_Skill_Crusader_All_78
+    21300158: 2DUI_Skill_Crusader_All_79
+    21300160: 2DUI_Skill_Crusader_All_80
+    21300162: 2DUI_Skill_Crusader_All_81
+    21300164: 2DUI_Skill_Crusader_All_82
+    21300166: 2DUI_Skill_Crusader_All_83
+    21300168: 2DUI_Skill_Crusader_All_84
+    21300170: 2DUI_Skill_Crusader_All_85
+    21300172: 2DUI_Skill_Crusader_All_86
+    21300174: 2DUI_Skill_Crusader_All_87
+    21300176: 2DUI_Skill_Crusader_All_88
+    21300178: 2DUI_Skill_Crusader_All_89
+    21300180: 2DUI_Skill_Crusader_All_90
+    21300182: 2DUI_Skill_Crusader_All_91
+    21300184: 2DUI_Skill_Crusader_All_92
+    21300186: 2DUI_Skill_Crusader_All_93
+    21300188: 2DUI_Skill_Crusader_All_94
+    21300190: 2DUI_Skill_Crusader_All_95
+    21300192: 2DUI_Skill_Crusader_All_96
+    21300194: 2DUI_Skill_Crusader_All_97
+    21300196: 2DUI_Skill_Crusader_All_98
+    21300198: 2DUI_Skill_Crusader_All_99
+    21300200: 2DUI_Skill_Crusader_All_100
+    21300202: 2DUI_Skill_Crusader_All_101
+    21300204: 2DUI_Skill_Crusader_All_102
+    21300206: 2DUI_Skill_Crusader_All_103
+    21300208: 2DUI_Skill_Crusader_All_104
+    21300210: 2DUI_Skill_Crusader_All_105
+    21300212: 2DUI_Skill_Crusader_All_106
+    21300214: 2DUI_Skill_Crusader_All_107
+    21300216: 2DUI_Skill_Crusader_All_108
+    21300218: 2DUI_Skill_Crusader_All_109
+    21300220: 2DUI_Skill_Crusader_All_110
+    21300222: 2DUI_Skill_Crusader_All_111
+    21300224: 2DUI_Skill_Crusader_All_112
+    21300226: 2DUI_Skill_Crusader_All_113
+    21300228: 2DUI_Skill_Crusader_All_114
+    21300230: 2DUI_Skill_Crusader_All_115
+    21300232: 2DUI_Skill_Crusader_All_116
+    21300234: 2DUI_Skill_Crusader_All_117
+    21300236: 2DUI_Skill_Crusader_All_118
+    21300238: 2DUI_Skill_Crusader_All_119
+    21300240: 2DUI_Skill_Crusader_All_120
+    21300242: 2DUI_Skill_Crusader_All_121
+    21300244: 2DUI_Skill_Crusader_All_122
+    21300246: 2DUI_Skill_Crusader_All_123
+    21300248: 2DUI_Skill_Crusader_All_124
+    21300250: 2DUI_Skill_Crusader_All_125
+    21300252: 2DUI_Skill_Crusader_All_126
+    21300254: 2DUI_Skill_Crusader_All_127
+    21300256: 2DUI_Skill_Crusader_All_128
+    21300258: 2DUI_Skill_Crusader_All_129
+    21300260: 2DUI_Skill_Crusader_All_130
+    21300262: 2DUI_Skill_Crusader_All_131
+    21300264: 2DUI_Skill_Crusader_All_132
+    21300266: 2DUI_Skill_Crusader_All_133
+    21300268: 2DUI_Skill_Crusader_All_134
+    21300270: 2DUI_Skill_Crusader_All_135
+    21300272: 2DUI_Skill_Crusader_All_136
+    21300274: 2DUI_Skill_Crusader_All_137
+    21300276: 2DUI_Skill_Crusader_All_138
+    21300278: 2DUI_Skill_Crusader_All_139
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 1950, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: 2DUI_Skill_Crusader_All_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_3
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_6
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_7
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_8
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_9
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_11
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_12
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_13
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_14
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_15
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_16
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_17
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_18
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_19
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_20
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_21
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_22
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_23
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_24
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_25
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_26
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_27
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 331
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_29
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_31
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_33
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_34
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_35
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_36
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_37
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_38
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_39
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_40
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_41
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_42
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_43
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_44
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_45
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_46
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_47
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_48
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_49
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_50
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_51
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_52
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_53
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_54
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_55
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 259
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_57
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_58
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_59
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_60
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_61
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_62
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_63
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_64
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_65
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_66
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_67
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_68
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_69
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_70
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_71
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_72
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_73
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_74
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_75
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_76
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_77
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_78
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_79
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_80
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_81
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_82
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_83
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 187
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_85
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_86
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_87
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_88
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_89
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_90
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_91
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_92
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_93
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_94
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_95
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_96
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_97
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_98
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_99
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_100
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_101
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_102
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_103
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_104
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_105
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_106
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_107
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_108
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_109
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_110
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_111
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 115
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_113
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_114
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_115
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_116
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_117
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_118
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_119
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_120
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_121
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_122
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_123
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_124
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_125
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_126
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_127
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_128
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_129
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_130
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_131
+      rect:
+        serializedVersion: 2
+        x: 1368
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_132
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_133
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_134
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_135
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_136
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_137
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_138
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 2DUI_Skill_Crusader_All_139
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 43
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

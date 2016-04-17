@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class myStats : MonoBehaviour {
+	private int alpha = 1;
 
 	private interfacePlayer playerInterface;
 	// Use this for initialization
@@ -76,5 +77,17 @@ public class myStats : MonoBehaviour {
 			playerInterface._health = 0;
 		else
 			playerInterface._health -= hit;
+	}
+
+	public void statsAffiche() {
+		if (alpha == 1) {
+			alpha = 0;
+			GameObject.Find ("statsContainers").GetComponent<CanvasGroup> ().blocksRaycasts = false;
+		}
+		else {
+			alpha++;
+			GameObject.Find ("statsContainers").GetComponent<CanvasGroup> ().blocksRaycasts = true;
+		}
+		GameObject.Find ("statsContainers").GetComponent<CanvasGroup> ().alpha = alpha;
 	}
 }
