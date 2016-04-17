@@ -81,14 +81,15 @@ public class Character : MonoBehaviour {
 			this.mana = this._maxMana;
 	}
 
-	protected virtual void Die() {
+	public virtual void Die() {
 		this._anim.SetBool ("isAttack", false);
+		this._anim.SetBool ("isRunning", false);
 		this._anim.SetBool ("isDeath", true);
 		this._dead = true;
 	}
 
 	public void receiveDamage(float damage, Character oppenent) {
-		Debug.Log (this.name + " recive " + damage + " damage");
+//		Debug.Log (this.name + " recive " + damage + " damage");
 		if (Random.Range (1, 101) <= 75 + oppenent.agility - this.agility) {
 			damage *= (1 - this.armor / 200);
 			this.ModifyHealth(-damage);
@@ -115,14 +116,14 @@ public class Character : MonoBehaviour {
 
 	IEnumerator coRegenHP() {
 		while (true) {
-			this.ModifyHealth(this._maxHealth / 60f);
+			this.ModifyHealth(this._maxHealth / 120f);
 			yield return new WaitForSeconds(1f);
 		}
 	}
 
 	IEnumerator coRegenMana() {
 		while (true) {
-			this.ModifyMana(this._maxMana / 60f);
+			this.ModifyMana(this._maxMana / 120f);
 			yield return new WaitForSeconds(1f);
 		}
 	}

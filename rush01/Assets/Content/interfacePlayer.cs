@@ -29,6 +29,11 @@ public class interfacePlayer : MonoBehaviour {
 			healthBarEnemy.fillAmount = 0.0f;
 			GameObject.Find("enemyName").GetComponent<Text>().text = "";
 		}
+		if (GameManager.gm.player.health <= 0) {
+			GameObject.Find ("deadTextEnd").GetComponent<Text> ().text = "You're dead!!!!! LOOOOOSSEERRRRR!";
+		} else {
+			GameObject.Find ("deadTextEnd").GetComponent<Text> ().text = "";
+		}
 	}
 
 	public void GetVal() {

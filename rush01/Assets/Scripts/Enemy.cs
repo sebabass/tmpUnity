@@ -54,7 +54,7 @@ public class Enemy : Character {
 		}
 	}
 
-	protected override void Die() {
+	public override void Die() {
 		base.Die ();
 		GameManager.gm.Drop (this.transform.position);
 		StartCoroutine (ClearZombie ());

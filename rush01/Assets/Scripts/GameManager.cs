@@ -14,13 +14,15 @@ public class GameManager : MonoBehaviour {
 	public GameObject[]			lootPotions;
 	public GameObject[]			lootWeapons;
 
+	private IEnumerator			_coDeath;
+
 	void Awake () {
 		if (gm == null)
 			gm = this;
 	}
 	
+//	public this.player = GameObject.FindGameObjectWithTag ("Player").transform.GetComponent<Player>();
 	void Start () {
-		this.player = GameObject.FindGameObjectWithTag ("Player").transform.GetComponent<Player>();
 		this.competencePoints = 0;
 		this.skillPoints = 0;
 	}

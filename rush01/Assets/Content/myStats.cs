@@ -48,22 +48,6 @@ public class myStats : MonoBehaviour {
 					GameManager.gm.player.constitution++;
 					GameManager.gm.competencePoints--;
 					break;
-				case 4 :
-					GameManager.gm.player.agility--;
-					GameManager.gm.competencePoints++;
-					break;
-				case 5 :
-					GameManager.gm.player.force--;
-					GameManager.gm.competencePoints++;
-					break;
-				case 6 :
-					GameManager.gm.player.armor--;
-					GameManager.gm.competencePoints++;
-					break;
-				case 7 :
-					GameManager.gm.player.constitution--;
-					GameManager.gm.competencePoints++;
-					break;
 			}
 		}
 	}
