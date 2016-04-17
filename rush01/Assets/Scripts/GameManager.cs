@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
 	public Player				player;
 	public int					level = 1;
 	public GameObject			levelUpParticle;
-	
+	public int					competencePoints;
 
 	void Awake () {
 		if (gm == null)
@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour {
 	
 	void Start () {
 		this.player = GameObject.FindGameObjectWithTag ("Player").transform.GetComponent<Player>();
+		this.competencePoints = 0;
 	}
 
 	void Update() {
@@ -25,6 +26,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LevelUp() {
+		this.player.LevelUp ();
+		this.competencePoints += 5;
 		Debug.Log ("LEVEL UP! (" + this.level + ")");
 		StartCoroutine (coLevelUp ());
 		this.level++;

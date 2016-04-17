@@ -111,6 +111,16 @@ public class Player : Character {
 			GameManager.gm.LevelUp();
 		}
 	}
+
+	public void LevelUp() {
+		this.xpMax += GameManager.gm.level * 100;
+		this.health += GameManager.gm.level * Random.Range (10, 20);
+		this.mana += GameManager.gm.level * Random.Range (5, 10);
+		this.force += 1;
+		this.agility += 1;
+		this.constitution += 1;
+		this.armor += 1;
+	}
 }
 
 /*using UnityEngine;
