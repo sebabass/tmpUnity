@@ -35,10 +35,4 @@ public class interfacePlayer : MonoBehaviour {
 		this._pointComp = GameManager.gm.competencePoints;
 		this._pointSkills = GameManager.gm.skillPoints;
 	}
-
-	if (GameManager.gm.onEnemy) {
-		healthBar.fillAmount = GameManager.gm.onEnemy.health / GameManager.gm.onEnemy.GetMaxHealth();
-	} else if (GameManager.gm.player.currentTarget && GameManager.gm.player.currentTarget.tag == "enemy")) {
-		healthBar.fillAmount = GameManager.gm.player.onEnemy.health / GameManager.gm.player.onEnemy.GetMaxHealth();
-	}
 }
