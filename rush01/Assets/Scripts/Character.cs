@@ -47,6 +47,8 @@ public class Character : MonoBehaviour {
 	protected virtual void Start() {
 		this._agent = this.GetComponent<NavMeshAgent> ();
 		this._anim = this.GetComponent<Animator> ();
+		StartCoroutine (coRegenHP ());
+		StartCoroutine (coRegenMana ());
 	}
 
 
@@ -66,34 +68,22 @@ public class Character : MonoBehaviour {
 		}
 		else if (this.health > this._maxHealth) 
 			this.health = this._maxHealth;
-		if( amount > 0 ) {
-			Debug.Log("PRENDRE POTION");
-			/*GameObject potion = (GameObject)Instantiate(healthPotion,potionHolder.position,Quaternion.identity);
-			potion.transform.SetParent(potionHolder);
-			potion.transform.localRotation = Quaternion.Euler(rotation);
-			StartCoroutine("DrinkPotion",potion);*/
-		}
-		else {
-//			if( health > 0 )
-//				StartCoroutine( "GetHit" );
-		}
-		//healthBar.fillAmount = health / maxHealth;
 	}
 
-	/*IEnumerator GetHit() {
-		rend.material.color = Color.red;
-		//GetComponent<AudioSource>().PlayOneShot( getHitSound );
-		yield return new WaitForSeconds( 0.65f );
-		rend.material.color = color;
-	}*/
+	public void ModifyMana (float amount) {
+		if (this._dead)
+			return;
+		this.mana += amount;
+		if (this.mana < 0) {
+			this.mana = 0;
+		}
+		else if (this.health > this._maxHealth) 
+			this.mana = this._maxMana;
+	}
 
 	protected virtual void Die() {
 		this._anim.SetBool ("isAttack", false);
 		this._anim.SetBool ("isDeath", true);
-		//ragdoll.SetActive( true );
-		//ragdoll.GetComponent<AudioSource>().volume = 0.5f;
-		//ragdoll.GetComponent<AudioSource>().PlayOneShot( deadSound );
-//		gameObject.SetActive( false );
 		this._dead = true;
 	}
 
@@ -121,6 +111,20 @@ public class Character : MonoBehaviour {
 		this.currentTarget.transform.GetComponent<Character> ().receiveDamage (this.DamageAttackMeele (), this);
 		yield return new WaitForSeconds (this.arme.speed);
 		this._animAttack = false;
+	}
+
+	IEnumerator coRegenHP() {
+		while (true) {
+			this.ModifyHealth(5f);
+			yield return new WaitForSeconds(1f);
+		}
+	}
+
+	IEnumerator coRegenMana() {
+		while (true) {
+			this.ModifyMana(2f);
+			yield return new WaitForSeconds(1f);
+		}
 	}
 
 	public bool TargetIsAlive() {

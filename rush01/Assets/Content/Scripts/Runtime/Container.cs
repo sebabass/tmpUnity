@@ -108,7 +108,7 @@ public class Container : MonoBehaviour {
 		bool dontCheckAnymore = false;
 
 		for( int i = 0;i < numberOfRecipes;i ++ ) {
-			resultIsStackable = InventoryManager.manager.ItemIsStackable( receiver.recipes[i].itemName );
+//			resultIsStackable = InventoryManager.manager.ItemIsStackable( receiver.recipes[i].itemName );
 			for( int j = 0;j < slots.Count;j ++ ) {
 				if( !slots[j].CheckRecipe( i ) ) {
 					break;
