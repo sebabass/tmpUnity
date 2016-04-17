@@ -62,7 +62,7 @@ public class Skill : SkillInformations {
 			Debug.LogError("Not enough money to bought this skill or minimum Step is not reach or previous skill not bought.");
 			return false;
 		}
-		// Decrementation de next price
+		GameManager.gm.skillPoints -= Mathf.RoundToInt( this.GetNextPrice() );
 		this._owned = true;
 		this._usersSkills.addOwnedSkill( this.gameObject );
 		this._currentLevel++;

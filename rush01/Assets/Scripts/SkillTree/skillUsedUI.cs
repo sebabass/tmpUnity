@@ -39,6 +39,8 @@ public class skillUsedUI : MonoBehaviour {
 			btn.GetComponent<Button>().onClick.AddListener(() => removeUsed( e ));
 
 			btn.GetComponentInChildren<Text>().text = ( skills[i] != null )?(e+1).ToString():"-";
+			if ( skills[i] != null )
+				btn.GetComponent<Image>().sprite = skills[i].getSkillImage();
 		}
 		this._ownedCount = skills.Count;
 	}

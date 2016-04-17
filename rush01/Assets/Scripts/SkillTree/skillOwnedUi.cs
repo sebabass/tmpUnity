@@ -30,6 +30,7 @@ public class skillOwnedUi : MonoBehaviour {
 			GameObject btn = GameObject.Instantiate( this._btnPrefab );
 			btn.transform.SetParent( this.transform );
 			btn.GetComponent<Button>().onClick.AddListener(() => AddUsed( e ));
+			btn.GetComponent<Image>().sprite = skills[i].getSkillImage();
 		}
 		this._ownedCount = skills.Count;
 	}
