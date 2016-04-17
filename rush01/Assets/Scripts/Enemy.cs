@@ -77,4 +77,11 @@ public class Enemy : Character {
 		GameObject.Destroy (this.gameObject);
 	}
 
+	void OnMouseEnter() {
+		GameManager.gm.onEnemy = this;
+	}
+
+	void OnMouseExit() {
+		GameManager.gm.onEnemy = null;
+	}
 }

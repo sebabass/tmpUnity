@@ -121,6 +121,8 @@ public class Player : Character {
 		this.constitution += 1;
 		this.armor += 1;
 	}
+
+
 }
 
 /*using UnityEngine;

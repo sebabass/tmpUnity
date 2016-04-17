@@ -7,6 +7,10 @@ public class Potion : Stuff {
 	private	int	_value;
 	
 	void Start () {
+		if (this.rareRange - 1 >= 0) {
+			ParticleSystem go = (ParticleSystem)Instantiate (rareParticle [this.rareRange - 1], transform.position, Quaternion.identity);
+			go.gameObject.transform.SetParent (gameObject.transform);
+		}
 		_value = (int)((GameManager.gm.player.GetMaxHealth() * rareRange) * 0.1f);
 	}
 	

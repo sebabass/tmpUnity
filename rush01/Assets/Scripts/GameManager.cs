@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour {
 		if (Random.Range (0, 5) == 0) {
 			int potion = Random.Range (0, 4);
 
-			if (potion == 0) {
+			if (potion < 3) {
 				Instantiate (this.lootPotions [Random.Range (0, this.lootPotions.Length)], pos, Quaternion.identity);
 			} else {
 				Instantiate (this.lootWeapons [Random.Range (0, this.lootWeapons.Length)], pos, Quaternion.identity);
